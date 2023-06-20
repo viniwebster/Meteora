@@ -1,6 +1,6 @@
 .dark{
     background-color: black;
-    padding: 40px;
+    padding: 40px 0;
     .desc-title{
         margin: 0 0 40px 0;
         color: white;
@@ -37,5 +37,15 @@
             }
 
         }
+    }
+}
+
+@media screen and (max-width: 890px) {
+
+    .sociais{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
     }
 }

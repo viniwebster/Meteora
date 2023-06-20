@@ -14,8 +14,11 @@
 
 .categorias-container{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    gap: 20px;
+  /*   display: flex;
+    align-items: center;
+    justify-content: space-between; */
 
     .categorias-card{
         display: flex;
@@ -27,5 +30,31 @@
             color: white;
             padding: .5rem;
         }
+    }
+}
+
+
+@media screen and (max-width: 890px) {
+
+    .categorias-container{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto auto;
+        justify-content: center;
+
+        gap: 30px;
+    }
+}
+
+
+@media screen and (max-width: 440px) {
+
+    .categorias-container{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        justify-content: center;
+
+        gap: 30px;
     }
 }
