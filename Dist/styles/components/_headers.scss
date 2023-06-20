@@ -1,0 +1,42 @@
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $cor-primaria;
+    padding: 1.05rem 1.25rem;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav-container{
+    display: flex;
+    gap: 40px;
+    margin-left: 60px;
+}
+
+.nav-item{
+    color: $cor-primaria-dois;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.search-container{
+    display: flex;
+    gap: 28px;
+}
+
+#search{
+    padding: 15px;
+}
+
+#buscar{
+    padding: 15px;
+    background-color: $cor-primaria;
+    color: $cor-primaria-dois;
+    font-weight: 700;
+    border: 1px solid $cor-primaria-dois;
+    cursor: pointer;
+}

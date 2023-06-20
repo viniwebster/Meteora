@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" 
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/components/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>Meteora</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">   
+            <nav>     
+                <img src="./assets/Desktop/Logo desktop.png" alt="Logo">        
+                <ul class="nav-container">
+                    <li><a href="#" class="nav-item">Home</a></li>
+                    <li><a href="#" class="nav-item">Nossas lojas</a></li>
+                    <li><a href="#" class="nav-item">Novidades</a></li>
+                    <li><a href="#" class="nav-item">Promoções</a></li>
+                </ul>
+            </nav>
+
+            <div class="search-container">
+                <input type="search" name="search" id="search" placeholder="Digite o produto">
+                <input type="button" value="Buscar" id="buscar">
+            </div>
+        </div>
+    </header>
+
+    <!-- Carrossel container -->
+    <div class="sliders-container swiper">
+
+        <!-- swipper wrapper -->
+        <div class="sliders-wrapper swiper-wrapper">
+            
+            <!-- slides -->
+            <div class="slides swiper-slide">
+                <img src="./assets/Desktop/Banner carousel 1 _ 1440 (1).png" alt="">
+            </div>
+
+            <div class="slides swiper-slide">
+                <div class="banner-infos">
+                    <h2 class="banner-title">Coleção atemporal</h2>
+                    <span class="banner-subtitle">Estilo e qualidade para durar.</span>
+                </div>
+                <img src="./assets/Desktop/Banner carousel 2 _ 1440 (1).png" alt="">
+            </div>
+
+            <div class="slides swiper-slide">
+                <div class="banner-infos banner-infos-left">
+                    <h2 class="banner-title">Coleção atemporal</h2>
+                    <span class="banner-subtitle">Alto impacto visual, baixo impacto ambiental!</span>
+                </div>
+                <img src="./assets/Desktop/Banner carousel 3 _ 1440 (1).png" alt="">
+            </div>
+        </div>
+
+        <!-- Swiper navigator -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- Swiper Pagination -->
+        <div class="swiper-pagination"></div>
+
+    </div> 
+
+    <main>
+        <section>         
+            <h3 class="desc-title">Busque por categoria:</h3>
+                <div class="container categorias-container">
+                    <div class="categorias-card">
+                        <img src="./assets/Desktop/Categorias/Categoria camiseta.png" alt="" srcset="">
+                        <span class="categoria-nome"> Camisetas</span>
+                    </div>
+
+                    <div class="categorias-card">
+                        <img src="./assets/Desktop/Categorias/Categoria Bolsa.png" alt="" srcset="">
+                        <span class="categoria-nome"> Bolsa</span>
+                    </div>
+
+                    <div class="categorias-card">
+                        <img src="./assets/Desktop/Categorias/Categoria Calçados.png" alt="" srcset="">
+                        <span class="categoria-nome"> Calçados</span>
+                    </div>
+
+                    <div class="categorias-card">
+                        <img src="./assets/Desktop/Categorias/Categoria calça.png" alt="" srcset="">
+                        <span class="categoria-nome"> Calças</span>
+                    </div>
+
+                    <div class="categorias-card">
+                        <img src="./assets/Desktop/Categorias/Categoria casacos.png" alt="" srcset="">
+                        <span class="categoria-nome"> Casacos</span>
+                    </div>
+
+                    <div class="categorias-card">
+                        <img src="./assets/Desktop/Categorias/Categoria óculos.png" alt="" srcset="">
+                        <span class="categoria-nome"> Óculos</span>
+                    </div>
+                </div>
+        </section>
+
+        <section>         
+            <h3 class="desc-title">Produtos que estão bombando!</h3>
+                <div class="container produtos-container">
+                    <div class="categorias-card">
+                        <img src="./assets/Desktop/Imagens Cards/Camiseta.png" alt="" srcset="">
+                        <div class="produto-desc-container">
+                            <span class="categoria-nome"> Camiseta Conforto</span>
+                            <p class="produto-desc">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.</p>
+                            <span class="preco"> R$ 70,00 </span>
+                        </div>
+                    </div>
+
+                    <div class="categorias-card">
+                        <img src="./assets/Desktop/Imagens Cards/Calça.png" alt="" srcset="">
+                        <div class="produto-desc-container">
+                            <span class="categoria-nome"> Calça Alfaiataria</span>
+                            <p class="produto-desc">Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</p>
+                            <span class="preco"> R$ 180,00 </span>
+                        </div>
+                    </div>
+
+                    <div class="categorias-card">
+                        <img src="./assets/Desktop/Imagens Cards/Tenis.png" alt="" srcset="">
+                        <div class="produto-desc-container">
+                            <span class="categoria-nome"> Tênis Chunky </span>
+                            <p class="produto-desc">Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.</p>
+                            <span class="preco"> R$ 250,00 </span>
+                        </div>
+                    </div>
+
+                    <div class="categorias-card">
+                        <img src="./assets/Desktop/Imagens Cards/Jaqueta.png" alt="" srcset="">
+                        <div class="produto-desc-container">
+                            <span class="categoria-nome"> Jaqueta Jeans</span>
+                            <p class="produto-desc">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
+                            <span class="preco"> R$ 150,00</span>
+                        </div>
+                    </div>
+
+                    <div class="categorias-card">
+                        <img src="./assets/Desktop/Imagens Cards/óculos.png" alt="" srcset="">
+                        <div class="produto-desc-container">
+                            <span class="categoria-nome"> Óculos Redondo</span>
+                            <p class="produto-desc">Armação metálica em grafite com lentes arredondadas. Sem erro!</p>
+                            <span class="preco"> R$ 120,00 </span>
+                        </div>
+                    </div>
+
+                    <div class="categorias-card">
+                        <img src="./assets/Desktop/Imagens Cards/Bolsa.png" alt="" srcset="">
+                        <div class="produto-desc-container">
+                            <span class="categoria-nome"> Bolsa coringa</span>
+                            <p class="produto-desc">Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!</p>
+                            <span class="preco"> R$ 120,00 </span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        },
+        navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>

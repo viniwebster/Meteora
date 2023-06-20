@@ -1,0 +1,23 @@
+.produtos-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    img{
+        height: 422px;
+    }
+
+    .produto-desc-container{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        
+        .categoria-nome{
+            
+            color: black;
+            font-weight: 700;
+            padding: .5rem;
+        }
+    }
+}

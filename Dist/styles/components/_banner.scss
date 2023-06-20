@@ -1,0 +1,38 @@
+.sliders-container{
+    .sliders-wrapper{
+        .slides img{
+            width: 100%;
+        }
+    }
+}
+
+.banner-infos{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 8px;
+
+    height: 100%;
+    width: 100%;
+    right: 16%;
+
+    position: absolute;
+    .banner-title{
+        font-size: 3.5rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: white;
+    }
+    .banner-subtitle{
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        color: white;
+    }
+}
+
+.banner-infos-left{
+    align-items: start;
+    right: 0;
+    left: 16%;
+}

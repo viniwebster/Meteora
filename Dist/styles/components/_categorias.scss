@@ -1,0 +1,31 @@
+.container{
+    max-width: 1100px;
+    width: 100vw;
+    margin: auto;
+}
+
+.desc-title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+
+    margin: 72px 0 32px 0;
+}
+
+.categorias-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .categorias-card{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .categoria-nome{
+            background-color: $cor-primaria;
+            color: white;
+            padding: .5rem;
+        }
+    }
+}
