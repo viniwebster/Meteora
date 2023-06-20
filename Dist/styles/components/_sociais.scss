@@ -1,0 +1,41 @@
+.dark{
+    background-color: black;
+    padding: 40px;
+    .desc-title{
+        margin: 0 0 40px 0;
+        color: white;
+    }
+}
+
+.sociais{
+    display: flex;
+    justify-content: space-between;  
+
+    .facilidades-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+
+        .facilidades-desc{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            width: 200px;
+
+            .title{
+                color: $cor-primaria-tres;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            .desc{
+                color: white;
+                font-size: 13px;
+                line-height: 20px;
+            }
+
+        }
+    }
+}
