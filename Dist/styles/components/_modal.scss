@@ -1,0 +1,121 @@
+.modal-container{
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    z-index: 999999;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.453);
+}
+
+.modal{
+    margin: auto;
+    width: 40vw;
+
+    background-color: white;
+    box-shadow: 0px 4px 15px 0px rgba(44, 63, 88, 0.35);
+    border-radius: 4px;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: $cor-primaria;
+    padding: 1.125rem;
+
+    border-radius: 4px 4px 0 0;
+    .title{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        .modal-title{
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: white;
+        }
+    }
+}
+
+.modal-infos-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.modal-infos-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 0 1rem;
+}
+
+.modal-infos{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .produto-title{
+        font-weight: 700;
+    }
+
+    .produto-desc{
+        line-height: 1.25rem;
+
+        padding-bottom: 1.5rem;
+
+        border-bottom: 2px solid $cor-primaria;
+    }
+
+    .preco{
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .infos-entrega{
+        color: $cor-primaria-dois;
+        padding-bottom: 1rem;
+
+        border-bottom: 1px solid $cor-primaria-dois;
+    }
+}
+
+.select-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .select-title{
+        font-weight: 700;
+    }
+}
+
+.cores{
+    display: flex;
+    gap: 1rem;
+}
+
+.input-check{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    #cor-um{
+        background-color: rgb(0, 208, 255);
+    }
+
+    #cor-dois{
+        background-color: white;
+    }
+
+    #cor-tres{
+        background-color: black;
+    }
+}
