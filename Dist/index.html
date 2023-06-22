@@ -14,7 +14,11 @@
         <div class="header-container">   
             <nav>     
                 <img src="./assets/Desktop/Logo desktop.png" alt="Logo">        
-                <ul class="nav-container">
+                <ul class="nav-container">                 
+                    <div class="menu-mobile-close">
+                        <img src="./assets/Mobile/close.png" alt="botao fechar menu mobile" srcset="">
+                    </div> 
+
                     <li><a href="#" class="nav-item">Home</a></li>
                     <li><a href="#" class="nav-item">Nossas lojas</a></li>
                     <li><a href="#" class="nav-item">Novidades</a></li>
@@ -26,6 +30,11 @@
                 <input type="search" name="search" id="search" placeholder="Digite o produto">
                 <input type="button" value="Buscar" id="buscar">
             </div>
+
+            <div class="menu-mobile">
+                <img src="./assets/Mobile/menu-mobile.svg" alt="menu-mobile">
+            </div> 
+
         </div>
     </header>
 
@@ -37,7 +46,8 @@
             
             <!-- slides -->
             <div class="slides swiper-slide">
-                <img src="./assets/Desktop/Banner carousel 1 _ 1440 (1).png" alt="">
+                <!-- <img src="./assets/Desktop/Banner carousel 1 _ 1440 (1).png" alt=""> -->
+                <div class="img-banner img1"></div>
             </div>
 
             <div class="slides swiper-slide">
@@ -45,7 +55,8 @@
                     <h2 class="banner-title">Coleção atemporal</h2>
                     <span class="banner-subtitle">Estilo e qualidade para durar.</span>
                 </div>
-                <img src="./assets/Desktop/Banner carousel 2 _ 1440 (1).png" alt="">
+                <div class="img-banner img2"></div>
+                <!-- <img src="./assets/Desktop/Banner carousel 2 _ 1440 (1).png" alt=""> -->
             </div>
 
             <div class="slides swiper-slide">
@@ -53,13 +64,14 @@
                     <h2 class="banner-title">Coleção atemporal</h2>
                     <span class="banner-subtitle">Alto impacto visual, baixo impacto ambiental!</span>
                 </div>
-                <img src="./assets/Desktop/Banner carousel 3 _ 1440 (1).png" alt="">
+                <div class="img-banner img3"></div>
+                <!-- <img src="./assets/Desktop/Banner carousel 3 _ 1440 (1).png" alt=""> -->
             </div>
         </div>
 
         <!-- Swiper navigator -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <img class="swiper-button-prev" src="./assets/icon-arrow-left.svg" alt="" srcset="">
+        <img class="swiper-button-next" src="./assets/icon-arrow-right.svg" alt="" srcset="">
 
         <!-- Swiper Pagination -->
         <div class="swiper-pagination"></div>
@@ -225,6 +237,9 @@
         const swiper = new Swiper('.swiper', {
         slidesPerView: 1,
         spaceBetween: 0,
+        autoplay: {
+        delay: 5000,
+        },
         pagination: {
         el: '.swiper-pagination',
         type: 'bullets',

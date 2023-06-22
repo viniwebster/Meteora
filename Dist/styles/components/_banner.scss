@@ -1,9 +1,22 @@
 .sliders-container{
     .sliders-wrapper{
-        .slides img{
-            width: 100%;
+        .img-banner{
+            height: 415px;
         }
     }
+    
+}
+
+.img1{
+    background: center / cover no-repeat url('../../assets/Desktop/Banner\ carousel\ 1\ _\ 1440\ \(1\).png');
+}
+
+.img2{
+    background: center / cover no-repeat url('../../assets/Desktop/Banner\ carousel\ 2\ _\ 1440\ \(1\).png');
+}
+
+.img3{
+    background: center / cover no-repeat url('../../assets/Desktop/Banner\ carousel\ 3\ _\ 1440\ \(1\).png');
 }
 
 .banner-infos{
@@ -13,9 +26,9 @@
     justify-content: center;
     gap: 8px;
 
+    right: 15%;
     height: 100%;
     width: 100%;
-    right: 16%;
 
     position: absolute;
     .banner-title{
@@ -32,7 +45,85 @@
 }
 
 .banner-infos-left{
-    align-items: start;
-    right: 0;
-    left: 16%;
+    align-items: start;  
+    left: 10%;
+}
+
+@media screen and (max-width: 890px) {
+    .img1{
+        background: url('../../assets/Tablet/Banner\ carousel\ 1\ _\ 768.png');
+        background-size: cover;
+    }
+
+    .img2{
+        background: url('../../assets/Tablet/Banner\ carousel\ 2\ _\ 768.png');
+        background-size: cover;
+    }
+
+    .img3{
+        background: url('../../assets/Tablet/Banner\ carousel\ 3\ _\ 768.png');
+        background-size: cover;
+    }
+
+
+    .banner-infos{    
+        right: 7%;
+    
+        position: absolute;
+        .banner-title{
+            font-size: 2.5rem;
+        }
+        .banner-subtitle{
+            font-size: 1.25rem;
+        }
+    }
+
+    .banner-infos-left{
+        align-items: start;
+        right: 0;
+        left: 7%;
+    }
+    
+}
+
+@media screen and (max-width: 440px) {
+    .img1{
+        background: url('../../assets/Mobile/Banner\ carousel\ 1\ _\ 375.png');
+        background-size: cover;
+    }
+
+    .img2{
+        background: url('../../assets/Mobile/Banner\ carousel\ 2\ _\ 375.png');
+        background-size: cover;
+    }
+
+    .img3{
+        background: url('../../assets/Mobile/Banner\ carousel\ 3\ _\ 375.png');
+        background-size: cover;
+    }
+
+
+    .banner-infos{    
+        right: 0%;
+        bottom: 15%;
+        align-items: center;
+        justify-content: end;
+        text-align: center;
+    
+        position: absolute;
+        .banner-title{
+            font-size: 2.2rem;
+        }
+        .banner-subtitle{
+            font-size: 1.25rem;
+        }
+    }
+
+    .banner-infos-left{
+        align-items: center;
+        text-align: center;
+        right: 0%;
+        left: 0%;
+    }
+    
 }
