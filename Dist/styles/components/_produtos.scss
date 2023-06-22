@@ -38,16 +38,19 @@
         }
 
         .btn{
-            cursor: pointer;
-            color: white;
-            background-color: $cor-primaria-quatro;
-
-            border: none;
-
             width: 30%;
-            padding: 9px 16px;
         }
     }
+}
+
+.btn{
+    cursor: pointer;
+    color: white;
+    background-color: $cor-primaria-quatro;
+
+    border: none;
+
+    padding: 9px 16px;
 }
 
 @media screen and (max-width: 890px) {

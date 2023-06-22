@@ -45,6 +45,22 @@ nav{
     display: none;
 }
 
+.menu-mobile-close{
+    display: none;
+}
+
+@media screen and (max-width: 890px) {
+    .nav-container{
+        gap: 12px;
+        margin-left: 12px;
+    }
+
+    .nav-item{
+        font-size: 0.7rem;
+    }
+}
+
+
 @media screen and (max-width: 440px) {
     
     .header-container{
@@ -74,7 +90,7 @@ nav{
     }
 
     .search-container{
-        display: block;
+        display: none;
         position: absolute;
         top: 9.8%;
         z-index: 9;
