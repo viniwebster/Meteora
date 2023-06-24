@@ -37,8 +37,16 @@
             font-size: 13px;
         }
 
-        .btn{
+        .btn-produto{
             width: 30%;
+
+            cursor: pointer;
+            color: white;
+            background-color: $cor-primaria-quatro;
+        
+            border: none;
+        
+            padding: 9px 16px;
         }
     }
 }
