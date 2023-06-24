@@ -212,22 +212,19 @@
                 <div class="email-container">
                     <p class="email-desc">Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</p>
 
-                    <div class="input-email">
-                        <input type="email" name="email" id="email" placeholder="Digite seu email">
-                        <button class="btn"> Enviar </button>
-                    </div>
+                    <form class="input-email" id="form-email">
+                        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                        <input type="submit" value="Enviar" class="btn" id="btn-email">
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
+    <section id="modal"></section>
 
-    <section id="modal">
-
-    </section>
-<!-- 
-    <section>
-        <dialog>
+    <!-- <section>
+        <dialog open="">
             <div class="modal-container">
             <div class="modal">
                 <header class="modal-header">
@@ -257,17 +254,17 @@
 
                             <div class="cores">
                                 <div class="input-check">                  
-                                    <input type="checkbox" name="cor-um" id="cor-um">
+                                    <input type="radio" name="cores" id="cor-um">
                                     <label for="cor-um">Azul claro</label>
                                 </div>
                                 
                                 <div class="input-check"> 
-                                    <input type="checkbox" name="cor-dois" id="cor-dois">
+                                    <input type="radio" name="cores" id="cor-dois">
                                     <label for="cor-dois">Offwhite</label>
                                 </div>  
 
                                 <div class="input-check"> 
-                                    <input type="checkbox" name="cor-tres" id="cor-tres">
+                                    <input type="radio" name="cores" id="cor-tres">
                                     <label for="cor-tres">Preto</label>
                                 </div>
                             </div>
@@ -277,30 +274,30 @@
                             <div class="cores">    
                                 
                                 <div class="input-check"> 
-                                    <input type="checkbox" name="p" id="cor-um">
+                                    <input type="radio" name="tamanhos" id="p">
                                     <label for="p">P</label>
                                 </div>
 
                                 <div class="input-check"> 
-                                    <input type="checkbox" name="pp" id="cor-dois">
+                                    <input type="radio" name="tamanhos" id="pp">
                                     <label for="pp">PP</label>
                                 </div>
 
 
                                 <div class="input-check"> 
-                                    <input type="checkbox" name="m" id="cor-tres">
+                                    <input type="radio" name="tamanhos" id="m">
                                     <label for="m">M</label>
                                 </div>
 
 
                                 <div class="input-check"> 
-                                    <input type="checkbox" name="g" id="cor-tres">
+                                    <input type="radio" name="tamanhos" id="g">
                                     <label for="g">G</label>
                                 </div>
 
 
                                 <div class="input-check"> 
-                                    <input type="checkbox" name="gg" id="cor-tres">
+                                    <input type="radio" name="tamanhos" id="gg">
                                     <label for="gg">GG</label>
                                 </div>
                                 
@@ -324,21 +321,22 @@
         </div>
     </footer>
 
-
-    <div class="modal-email">
-        <div class="modal">
-            <header class="modal-header">
-                <div class="title">
-                    <img src="./assets/check-circle.svg" alt="Icone check">
-                    <h3 class="modal-title">E-mail cadastrado com sucesso!</h3>
-                </div>                    
-                <img src="./assets/close-modal.svg" alt="Close modal">
-            </header>
-            <div class="email-infos">
-                <p>Em breve você receberá novidades exclusivas da Meteora.</p>
+    <!-- <dialog class="modal-email-container">
+        <div class="modal-email">
+            <div class="modal">
+                <header class="modal-header">
+                    <div class="title">
+                        <img src="./assets/check-circle.svg" alt="Icone check">
+                        <h3 class="modal-title">E-mail cadastrado com sucesso!</h3>
+                    </div>                    
+                    <img src="./assets/close-modal.svg" alt="Close modal">
+                </header>
+                <div class="email-infos">
+                    <p>Em breve você receberá novidades exclusivas da Meteora.</p>
+                </div>
             </div>
         </div>
-    </div>
+    </dialog> -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

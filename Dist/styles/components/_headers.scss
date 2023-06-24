@@ -21,6 +21,11 @@ nav{
     color: $cor-primaria-dois;
     text-decoration: none;
     cursor: pointer;
+
+    &:hover{
+        padding-bottom: 28px;
+        border-bottom: 5px solid white;
+    }
 }
 
 .search-container{
@@ -87,6 +92,10 @@ nav{
         font-weight: 700;
         padding-bottom: 10px;
         border-bottom: 2px solid white;
+        &:hover{
+            padding-bottom: none;
+            border-bottom: none;
+        }
     }
 
     .search-container{

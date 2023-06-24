@@ -23,17 +23,15 @@
         width: 60%;
         input{
             width: 80%;
+            outline: none;
         }
         .btn{
             flex: 1;
 
-            cursor: pointer;
-            color: white;
-            background-color: $cor-primaria-quatro;
-
-            border: none;
-
-            padding: 9px 16px;
+            &:hover{
+                transition: .3s;
+                background-color: rgb(170, 96, 240);
+            }
         }
     }
 }

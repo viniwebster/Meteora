@@ -47,6 +47,11 @@
             border: none;
         
             padding: 9px 16px;
+            
+            &:hover{
+                transition: .3s;
+                background-color: rgb(170, 96, 240);
+            }
         }
     }
 }

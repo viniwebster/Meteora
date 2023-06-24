@@ -26,7 +26,7 @@ export function addModal(btn: Element){
                     <h4 class="produto-title"> ${nomeProduto.textContent} </h4>
                     <p class="produto-desc"> ${descProduto.textContent}</p>
 
-                    <span class="preco"> R$ ${precoProduto.textContent} </span>
+                    <span class="preco"> ${precoProduto.textContent} </span>
                     <span class="infos-entrega">Vendido e entregue por Riachuelo</span>
                 </div>  
 
@@ -36,17 +36,17 @@ export function addModal(btn: Element){
 
                     <div class="cores">
                         <div class="input-check">                  
-                            <input type="checkbox" name="cor-um" id="cor-um">
+                            <input type="radio" name="cores" id="cor-um">
                             <label for="cor-um">Azul claro</label>
                         </div>
                         
                         <div class="input-check"> 
-                            <input type="checkbox" name="cor-dois" id="cor-dois">
+                            <input type="radio" name="cores" id="cor-dois">
                             <label for="cor-dois">Offwhite</label>
                         </div>  
 
                         <div class="input-check"> 
-                            <input type="checkbox" name="cor-tres" id="cor-tres">
+                            <input type="radio" name="cores" id="cor-tres">
                             <label for="cor-tres">Preto</label>
                         </div>
                     </div>
@@ -56,30 +56,30 @@ export function addModal(btn: Element){
                     <div class="cores">    
                         
                         <div class="input-check"> 
-                            <input type="checkbox" name="p" id="cor-um">
+                            <input type="radio" name="tamanhos" id="p">
                             <label for="p">P</label>
                         </div>
 
                         <div class="input-check"> 
-                            <input type="checkbox" name="pp" id="cor-dois">
+                            <input type="radio" name="tamanhos" id="pp">
                             <label for="pp">PP</label>
                         </div>
 
 
                         <div class="input-check"> 
-                            <input type="checkbox" name="m" id="cor-tres">
+                            <input type="radio" name="tamanhos" id="m">
                             <label for="m">M</label>
                         </div>
 
 
                         <div class="input-check"> 
-                            <input type="checkbox" name="g" id="cor-tres">
+                            <input type="radio" name="tamanhos" id="g">
                             <label for="g">G</label>
                         </div>
 
 
                         <div class="input-check"> 
-                            <input type="checkbox" name="gg" id="cor-tres">
+                            <input type="radio" name="tamanhos" id="gg">
                             <label for="gg">GG</label>
                         </div>
                         
