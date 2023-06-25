@@ -31,10 +31,10 @@ nav {
   color: #cccccc;
   text-decoration: none;
   cursor: pointer;
-}
-.nav-item:hover {
-  padding-bottom: 28px;
-  border-bottom: 5px solid white;
+  /*  &:hover{
+       padding-bottom: 28px;
+       border-bottom: 5px solid white;
+   } */
 }
 
 .search-container {
@@ -78,25 +78,26 @@ nav {
     align-items: center;
   }
   .nav-container {
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 20px;
     position: absolute;
-    top: 0%;
+    top: 0;
     right: 0;
     z-index: 99999;
     padding: 0rem 1.5rem 1.5rem;
+    width: 35vw;
     background-color: rgb(74, 71, 71);
+  }
+  .menu-mobile-close {
+    display: flex;
   }
   .nav-item {
     display: block;
     font-weight: 700;
+    font-size: 1.12rem;
     padding-bottom: 10px;
     border-bottom: 2px solid white;
-  }
-  .nav-item:hover {
-    padding-bottom: none;
-    border-bottom: none;
   }
   .search-container {
     display: none;
@@ -448,6 +449,7 @@ footer {
 dialog {
   border: none;
   padding: 0;
+  border-radius: 4px;
 }
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.857);
@@ -588,6 +590,7 @@ dialog::backdrop {
 
 .modal-email {
   display: flex;
+  border-radius: 4px;
 }
 
 .email-infos {
@@ -617,5 +620,59 @@ dialog::backdrop {
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     border-left: 1px solid #ccc;
+  }
+}
+.container-loja-infos {
+  display: flex;
+  gap: 30px;
+  height: 300px;
+  padding: 2rem 1.5rem;
+  margin-bottom: 4rem;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgb(184, 180, 180);
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.lojas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+}
+.lojas .title-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.lojas .title {
+  font-weight: 700;
+  font-size: 1.12rem;
+}
+
+.mapa-container {
+  flex: 1;
+}
+
+@media screen and (max-width: 890px) {
+  .container-loja-infos {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 460px) {
+  .container-loja-infos {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
   }
 }/*# sourceMappingURL=style.css.map */

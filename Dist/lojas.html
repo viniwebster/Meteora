@@ -92,11 +92,87 @@
                         <li class="loja-info">Cel: 94444-4444</li>
                     </ul>
                 </div>  
-                             
+
                 <div class="mapa-container" id="map"></div>
             </div>
         </div>
     </div>
+
+    <div class="container loja-container">
+        <div class="container-loja-infos">
+            <div class="infos">
+                <ul class="lojas">
+                    <div class="title-container">
+                        <img src="./assets/geo-alt-fill.svg" alt="" srcset="">
+                        <h5 class="title">Endereço</h5>
+                    </div>
+
+                    <li class="loja-info">Avenida Tenente Marques, nº 999</li>
+                    <li class="loja-info">Santana de Parnaiba - SP</li>
+                    <li class="loja-info">CEP 44444-444</li>
+                </ul>
+
+                <ul class="lojas">
+                    <div class="title-container">
+                        <img src="./assets/clock.svg" alt="">
+                        <h5 class="title">Horário de Funcionamento</h5>
+                    </div>
+                    <li class="loja-info">Seg. Sáb: das 08:00 as 18:00 </li>
+                    <li class="loja-info">Dom: das 09:00 às 14:00</li>
+                </ul>
+
+                <ul class="lojas">
+                    <div class="title-container">
+                        <img src="./assets/telephone-forward-fill.svg" alt="">
+                        <h5 class="title">Contatos</h5>
+                    </div>
+                    <li class="loja-info">Tel: 4444-4444</li>
+                    <li class="loja-info">Cel: 94444-4444</li>
+                </ul>
+            </div>  
+                         
+            <div class="mapa-container" id="map2"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container loja-container">
+    <div class="container-loja-infos">
+        <div class="infos">
+            <ul class="lojas">
+                <div class="title-container">
+                    <img src="./assets/geo-alt-fill.svg" alt="" srcset="">
+                    <h5 class="title">Endereço</h5>
+                </div>
+
+                <li class="loja-info">Avenida Tenente Marques, nº 999</li>
+                <li class="loja-info">Santana de Parnaiba - SP</li>
+                <li class="loja-info">CEP 44444-444</li>
+            </ul>
+
+            <ul class="lojas">
+                <div class="title-container">
+                    <img src="./assets/clock.svg" alt="">
+                    <h5 class="title">Horário de Funcionamento</h5>
+                </div>
+                <li class="loja-info">Seg. Sáb: das 08:00 as 18:00 </li>
+                <li class="loja-info">Dom: das 09:00 às 14:00</li>
+            </ul>
+
+            <ul class="lojas">
+                <div class="title-container">
+                    <img src="./assets/telephone-forward-fill.svg" alt="">
+                    <h5 class="title">Contatos</h5>
+                </div>
+                <li class="loja-info">Tel: 4444-4444</li>
+                <li class="loja-info">Cel: 94444-4444</li>
+            </ul>
+        </div>  
+                     
+        <div class="mapa-container" id="map3"></div>
+    </div>
+</div>
+</div>
 </section>
 
 
@@ -109,6 +185,26 @@
 
 <script>
     var map = L.map('map').setView([-23.4062694, -46.8885119], 17);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([-23.4062694, -46.8885119]).addTo(map)
+        .bindPopup('Nossa loja fica aqui.')
+        .openPopup()
+
+    var map = L.map('map2').setView([-23.4062694, -46.8885119], 17);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([-23.4062694, -46.8885119]).addTo(map)
+        .bindPopup('Nossa loja fica aqui.')
+        .openPopup();
+
+        var map = L.map('map3').setView([-23.4062694, -46.8885119], 17);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

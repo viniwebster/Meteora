@@ -1,6 +1,8 @@
 dialog{
     border: none;
     padding: 0;
+
+    border-radius: 4px;
     &::backdrop{
         background-color: rgba(0, 0, 0, 0.857);
     }
@@ -17,7 +19,7 @@ dialog{
     width: 100vw;
     height: 100vh;
     left: 0; */
-
+    
     background-color: rgba(0, 0, 0, 0.447);
 }
 
@@ -155,6 +157,7 @@ dialog{
 
 .modal-email{
     display: flex;
+    border-radius: 4px;
 }
 
 .email-infos{
