@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" 
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/components/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <title>Meteora</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">   
+            <nav>     
+                <img src="./assets/Desktop/Logo desktop.png" alt="Logo">        
+                <ul class="nav-container">                 
+                    <div class="menu-mobile-close">
+                        <img src="./assets/Mobile/close.png" alt="botao fechar menu mobile" srcset="">
+                    </div> 
+
+                    <li><a href="#" class="nav-item">Home</a></li>
+                    <li><a href="./lojas.html" class="nav-item">Nossas lojas</a></li>
+                    <li><a href="#" class="nav-item">Novidades</a></li>
+                    <li><a href="#" class="nav-item">Promoções</a></li>
+                </ul>
+            </nav>
+
+            <div class="search-container">
+                <input type="search" name="search" id="search" placeholder="Digite o produto">
+                <input type="button" value="Buscar" id="buscar">
+            </div>
+
+            <div class="menu-mobile">
+                <img src="./assets/Mobile/menu-mobile.svg" alt="menu-mobile">
+            </div> 
+        </div>
+    </header>
+
+
+<!-- Carrossel container -->
+<div class="sliders-container swiper">
+
+    <!-- swipper wrapper -->
+    <div class="sliders-wrapper swiper-wrapper">     
+        <!-- slides -->
+        <div class="slides swiper-slide">
+            <!-- <img src="./assets/Desktop/Banner carousel 1 _ 1440 (1).png" alt=""> -->
+            <div class="img-banner img1"></div>
+        </div>
+    </div>
+</div> 
+
+
+<section>        
+    <div class="desc-title"> Conheça nossas lojas</div>
+        <div class="container loja-container">
+            <div class="container-loja-infos">
+                <div class="infos">
+                    <ul class="lojas">
+                        <div class="title-container">
+                            <img src="./assets/geo-alt-fill.svg" alt="" srcset="">
+                            <h5 class="title">Endereço</h5>
+                        </div>
+
+                        <li class="loja-info">Avenida Tenente Marques, nº 999</li>
+                        <li class="loja-info">Santana de Parnaiba - SP</li>
+                        <li class="loja-info">CEP 44444-444</li>
+                    </ul>
+
+                    <ul class="lojas">
+                        <div class="title-container">
+                            <img src="./assets/clock.svg" alt="">
+                            <h5 class="title">Horário de Funcionamento</h5>
+                        </div>
+                        <li class="loja-info">Seg. Sáb: das 08:00 as 18:00 </li>
+                        <li class="loja-info">Dom: das 09:00 às 14:00</li>
+                    </ul>
+
+                    <ul class="lojas">
+                        <div class="title-container">
+                            <img src="./assets/telephone-forward-fill.svg" alt="">
+                            <h5 class="title">Contatos</h5>
+                        </div>
+                        <li class="loja-info">Tel: 4444-4444</li>
+                        <li class="loja-info">Cel: 94444-4444</li>
+                    </ul>
+                </div>  
+                             
+                <div class="mapa-container" id="map"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="container footer">
+        <p>2023 © Desenvolvido por Alura | Projeto fictício sem fins comerciais.</p>
+    </div>
+</footer>
+
+
+<script>
+    var map = L.map('map').setView([-23.4062694, -46.8885119], 17);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([-23.4062694, -46.8885119]).addTo(map)
+        .bindPopup('Nossa loja fica aqui.')
+        .openPopup();
+</script>
+
+</body>
+</html>
