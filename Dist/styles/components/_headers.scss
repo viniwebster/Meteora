@@ -71,10 +71,11 @@ nav{
     .header-container{
         flex-wrap: wrap;
         align-items: center;
+        padding: 1.12rem 0 0 0;
     }
 
     .nav-container{
-        display: flex;
+        display: none;
         flex-direction: column;
         gap: 20px;
 
@@ -87,6 +88,10 @@ nav{
         width: 35vw;
 
         background-color: rgb(74, 71, 71);        
+    }
+
+    .logo{
+        margin-left: 1.5rem;
     }
 
     .menu-mobile-close{
@@ -104,26 +109,36 @@ nav{
     }
 
     .search-container{
-        display: none;
-        position: absolute;
-        top: 9.8%;
-        z-index: 9;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        order: 3;
         background-color: white;
+
+        width: 100vw;
         padding: 1rem;
+        margin-top: 1rem;
+
+        #search{
+            width: 80%;
+        }
     }
 
     #buscar{
         background-color: white;
-        border: 1px solid $cor-primaria;
         color: $cor-primaria;
+
+        border: 1px solid $cor-primaria;
     }
 
     .menu-mobile{
         display: block;
+        margin-right: 1.5rem;
     }   
 
     .menu-mobile-close{
         align-self: end;
-        margin-top: 20px;
+        margin-right: 0;
+        margin-top: 30px;
     }
 }

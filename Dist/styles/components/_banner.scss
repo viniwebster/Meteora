@@ -96,18 +96,15 @@
 
 @media screen and (max-width: 440px) {
     .img1{
-        background: url('../../assets/Mobile/Banner\ carousel\ 1\ _\ 375.png');
-        background-size: cover;
+        background: center / cover no-repeat  url('../../assets/Mobile/Banner\ carousel\ 1\ _\ 375.png');
     }
 
     .img2{
-        background: url('../../assets/Mobile/Banner\ carousel\ 2\ _\ 375.png');
-        background-size: cover;
+        background: center / cover no-repeat url('../../assets/Mobile/Banner\ carousel\ 2\ _\ 375.png');
     }
 
     .img3{
-        background: url('../../assets/Mobile/Banner\ carousel\ 3\ _\ 375.png');
-        background-size: cover;
+        background: center / cover no-repeat url('../../assets/Mobile/Banner\ carousel\ 3\ _\ 375.png');
     }
 
 

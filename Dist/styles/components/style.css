@@ -76,9 +76,10 @@ nav {
   .header-container {
     flex-wrap: wrap;
     align-items: center;
+    padding: 1.12rem 0 0 0;
   }
   .nav-container {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 20px;
     position: absolute;
@@ -88,6 +89,9 @@ nav {
     padding: 0rem 1.5rem 1.5rem;
     width: 35vw;
     background-color: rgb(74, 71, 71);
+  }
+  .logo {
+    margin-left: 1.5rem;
   }
   .menu-mobile-close {
     display: flex;
@@ -100,24 +104,31 @@ nav {
     border-bottom: 2px solid white;
   }
   .search-container {
-    display: none;
-    position: absolute;
-    top: 9.8%;
-    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    order: 3;
     background-color: white;
+    width: 100vw;
     padding: 1rem;
+    margin-top: 1rem;
+  }
+  .search-container #search {
+    width: 80%;
   }
   #buscar {
     background-color: white;
-    border: 1px solid #000000;
     color: #000000;
+    border: 1px solid #000000;
   }
   .menu-mobile {
     display: block;
+    margin-right: 1.5rem;
   }
   .menu-mobile-close {
     align-self: end;
-    margin-top: 20px;
+    margin-right: 0;
+    margin-top: 30px;
   }
 }
 .sliders-container {
@@ -206,16 +217,13 @@ nav {
 }
 @media screen and (max-width: 440px) {
   .img1 {
-    background: url("../../assets/Mobile/Banner carousel 1 _ 375.png");
-    background-size: cover;
+    background: center/cover no-repeat url("../../assets/Mobile/Banner carousel 1 _ 375.png");
   }
   .img2 {
-    background: url("../../assets/Mobile/Banner carousel 2 _ 375.png");
-    background-size: cover;
+    background: center/cover no-repeat url("../../assets/Mobile/Banner carousel 2 _ 375.png");
   }
   .img3 {
-    background: url("../../assets/Mobile/Banner carousel 3 _ 375.png");
-    background-size: cover;
+    background: center/cover no-repeat url("../../assets/Mobile/Banner carousel 3 _ 375.png");
   }
   .banner-infos {
     right: 0%;
