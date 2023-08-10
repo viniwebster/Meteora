@@ -6,8 +6,8 @@ Projeto do challenge front-end da Alura.
 | -------------  | --- |
 | :sparkles: Nome        | **Meteora**
 | :label: Tecnologias | HTML, SCSS e TypeScript
-| :rocket: URL         | https://viniflix-seven.vercel.app/
-| :fire: Desafio     | https://www.frontendmentor.io/challenges/entertainment-web-app-J-UhgAW1X
+| :rocket: URL         | https://meteora-tau.vercel.app/
+| :fire: Desafio     | https://www.alura.com.br/challenges/front-end-7
 
 #Descricao
 
